@@ -44,7 +44,7 @@
                           </span>
                         </div>
                       </div>
-                
+
                       <!-- Users card -->
                       <div class="flex items-center justify-between p-4 bg-white rounded-md dark:bg-darker">
                         <div>
@@ -78,7 +78,7 @@
                           </span>
                         </div>
                       </div>
-                
+
                       <!-- Orders card -->
                       <div class="flex items-center justify-between p-4 bg-white rounded-md dark:bg-darker">
                         <div>
@@ -90,7 +90,7 @@
                           @foreach ($sale1 as $sale1)
                           <span class="text-xl font-semibold text-green-600">$ {{$sale1->Total}}</span>
                           @endforeach
-                          
+
 
                           {{-- <span class="inline-block px-2 py-px ml-2 text-xs text-green-500 bg-green-100 rounded-md">
                             +3.1%
@@ -115,7 +115,7 @@
                           </span>
                         </div>
                       </div>
-                
+
                       <!-- Tickets card -->
                       <div class="flex items-center justify-between p-4 bg-white rounded-md dark:bg-darker">
                         <div>
@@ -125,7 +125,7 @@
                             Products
                           </h6>
                           @foreach ($product1 as $product1)
-                          <span class="text-xl font-semibold">$ {{$product1->Total}}</span>
+                          <span class="text-xl font-semibold">{{$product1->Total}}</span>
                           @endforeach
                           {{-- <span class="inline-block px-2 py-px ml-2 text-xs text-green-500 bg-green-100 rounded-md">
                             +3.1%
@@ -151,7 +151,7 @@
                         </div>
                       </div>
                     </div>
-                
+
                     <!-- Charts -->
 
                       <!-- Bar chart card -->
@@ -199,7 +199,7 @@
                                       $count=1;
                                   @endphp
                                   @foreach ($purchase as $purchase)
-                                  
+
                                   <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 text-center">
                                       <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                           {{$count++}}
@@ -232,7 +232,7 @@
                           </div>
                         </div>
                       </div>
-                
+
                       <!-- Doughnut chart card -->
                       <div class="bg-white rounded-md dark:bg-darker" x-data="{ isOn: false }">
                         <!-- Card header -->
@@ -277,7 +277,7 @@
                                       $count=1;
                                   @endphp
                                   @foreach ($sale as $sale)
-                                  
+
                                   <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 text-center">
                                       <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                           {{$count++}}

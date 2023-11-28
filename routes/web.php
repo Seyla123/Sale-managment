@@ -89,6 +89,9 @@ Route::middleware([
     Route::controller(DashboardController::class)->group(function () {
             Route::get('/', 'index')->name('dashboard');
         });
- 
+        Route::controller(DashboardController::class)->group(function () {
+            Route::get('/dashboard', 'index')->name('dashboard');
+        });
+
 });
 
